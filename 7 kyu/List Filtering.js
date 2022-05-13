@@ -2,12 +2,13 @@
 
 function filter_list(l) {
     // Return a new array with the strings filtered out
-    let num = (val) => {
-        if(typeof(val) === 'number'){
-            return val;
+    let newList = []
+
+    for(let i = 0; i < l.length; i++){
+        if(typeof(l[i]) === "number"){
+            newList.push(l[i]);
         }
     }
-    let numbers = l.filter(num);
-    return numbers;
+
+    return newList;
   }
-  filter_list([1,2,'a','b'])
