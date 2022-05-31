@@ -11,8 +11,4 @@ function filter_list(l) {
     }
 
     return newList;
-<<<<<<< HEAD
   }
-=======
-  }
->>>>>>> c5c93c9ca6716c4565937bb33fcec50da4910b35
