@@ -22,59 +22,31 @@
 
 // (Condition 2) not fulfilled).
 
+
+// NOT COMPLETE
+
 function bouncingBall(h,  bounce,  window) {
     let count = 1;
     if(h > 0 && 0 < bounce < 1 && window < h){
 
         count++;
-        // while(h * bounce > window){
-        //     count += 2;
-        // }
+        while(h * bounce > window){
+            count += 2;
+        }
+    }else{
+        count = -1;
     }
-    // }else{
-    //     return -1;
-    // }
     return count;
 }
-bouncingBall(3.0, 0.66, 1.5)
-
-
-
 
 function bouncingBall(h,  bounce,  window) {
-    var currentHeight = h;
-    var numberOfPasses = 0;
-    
-    console.log(h, bounce, window );
-    
-    if (bounce <= 0 || bounce >= 1) //Bounce must be between 0 and 1
-    {
+    if (h <= 0.0 || bounce <= 0.0 || bounce >= 1.0 || window >= h) {
       return -1;
-      console.log("Outside Range!");
     }
     
-    while (currentHeight >= window) //Loop starts at balls current height
-    {
-      numberOfPasses++; //ball passes window on way down
-    
-      currentHeight = currentHeight * bounce; //new max height to be reached
-      
-      if (currentHeight >= window) //If that max height is greater than window
-      {
-        numberOfPasses++; //The ball passes on the way up
-      }
-      
+    let views = 1;
+    while ((h *= bounce) > window) {
+      views += 2;
     }
-   
-   if (numberOfPasses > 0) 
-   {
-     return numberOfPasses;
-   }
-   
-   else
-   { 
-     return -1;
-   }
-  
-
-}
+    return views;
+  }
