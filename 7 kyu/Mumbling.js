@@ -1,18 +1,15 @@
+// This time no story, no theory. The examples below show you how to write function accum:
+
+// Examples:
+// accum("abcd") -> "A-Bb-Ccc-Dddd"
+// accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+// accum("cwAt") -> "C-Ww-Aaa-Tttt"
+// The parameter of accum is a string which includes only letters from a..z and A..Z.
+
+
 function accum(s) {
-    let newString = '';
-      let chars = s.split();
-    
-    for(let i = 0; i < chars.length; i++){
-      
-    }
-    return newString;
-  }
-  
-  //split the string
-  //separate each letter with '-'
-  //capitalize the first letter of each letter string
-  //add accumitaveldfsafd
-  
-  
-  //string to array back to string
-  //chars.join
+  return s
+    .split("")
+    .map((a, i) => a.toUpperCase() + a.toLowerCase().repeat(i))
+    .join("-");
+}
