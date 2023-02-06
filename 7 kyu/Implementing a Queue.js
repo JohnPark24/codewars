@@ -17,6 +17,37 @@
 
 // As long as the tests pass, go for it!
 
+
+class Queue {
+  constructor() {
+    this.storage = {}
+    this.head = 0
+    this.tail = 0
+  }
+  enqueue(element) {
+    this.storage[this.tail] = element
+    this.tail++
+  }
+  dequeue() {
+    let removed = this.storage[this.head]
+    delete this.storage[this.head]
+    this.head++
+    return removed
+  }
+  size() {
+    let total = this.tail - this.head
+    if(total > -1){
+      return total
+    }else{
+      return 0
+    }
+  }
+}
+
+const queue = new Queue()
+
+
+//////////////////////////////////////////////////////////////////
 var Queue = function() {
     // implement your Queue constructor here
     let array = [];
@@ -38,7 +69,7 @@ var Queue = function() {
 };
 
 
-
+/////////////////////////////////////////////////////////////////////////////
 var Queue = function() {
     // implement your Queue constructor here
     this.queue = [];
