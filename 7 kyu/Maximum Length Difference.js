@@ -19,7 +19,7 @@ function mxdiflg(a1, a2) {
     let a2Long = Math.max(...a2.map(str => str.length))
     let a2Short = Math.min(...a2.map(str => str.length))
 
-    return Math.max(a1Long-a2Short,a2Long-a1Short)
+    return Math.max(a1Long-a2Short,a2Long-a1Short);
 }
 
 function mxdiflg(a1, a2) {
