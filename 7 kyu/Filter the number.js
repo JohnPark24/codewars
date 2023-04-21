@@ -14,7 +14,7 @@ var filterString = function(value) {
 }
 
 var FilterString = function(value) {
-    return parseInt(value.replace(/[^\d]/g, ""))
+    return parseInt(value.replace(/[^\d]/g, ""));
 }
 
 const FilterString = value => +value.replace(/\D/g, '');
