@@ -94,5 +94,5 @@ var maxVowels = function(s, k) {
         if(maxCount<count)
         maxCount=count
     }
-    return maxCount
+    return maxCount;
 };
