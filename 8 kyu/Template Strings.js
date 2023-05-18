@@ -9,5 +9,5 @@
 // Reference: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/template_strings
 
 var TempleStrings = function(obj, feature) {
-    return `${obj} are ${feature}`
+    return `${obj} are ${feature}`;
 }
