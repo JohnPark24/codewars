@@ -23,5 +23,5 @@ var findDigit = function(num, nth){
     if(numPos >= 0){
         return parseInt(numStr[numPos])
     }
-    return 0
+    return 0;
 }
