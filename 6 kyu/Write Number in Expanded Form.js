@@ -15,7 +15,7 @@ function expandedForm(num) {
         if(numStr[i] == 0) continue;
         else result.push(numStr[i] + '0'.repeat(numStr.length -i -1))
     }
-    return result.join(' + ')
+    return result.join(' + ');
 }
 
 
