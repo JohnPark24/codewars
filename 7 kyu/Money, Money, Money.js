@@ -31,7 +31,7 @@ function calculateYears(principal, interest, tax, desired) {
         }
         let currentYear = principal * interest;
         let currentTax = currentYear * tax;
-        principal = principal + currentYear - currentTax
+        principal = principal + currentYear - currentTax;
     }
 }
 
