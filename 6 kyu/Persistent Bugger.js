@@ -20,7 +20,7 @@ function persistence(num) {
         num = sum;
         count++;
     }
-    return count
+    return count;
 }
 
 
