@@ -14,5 +14,7 @@ function switcheroo(x){
         }
         return char;
     })
-    .join('')
+    .join('');
 }
+
+const switcheroo=x=>x.replace(/[ab]/g,x=>x=="a"?"b":"a")
