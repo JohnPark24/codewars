@@ -30,4 +30,4 @@ class Room  {
     bedroom : new Room(),
     kitchen : new Room(),
     bathroom : new Room(),
-}
+};
