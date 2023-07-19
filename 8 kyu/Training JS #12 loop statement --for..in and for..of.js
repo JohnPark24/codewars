@@ -87,5 +87,5 @@ function giveMeFive(obj){
             arr.push(obj[key])
         }
     }
-    return arr    
+    return arr;
 }
