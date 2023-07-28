@@ -50,5 +50,5 @@ function stat(strg) {
         return `${String(h).padStart(2, '0')}|${String(m).padStart(2, '0')}|${String(s).padStart(2, '0')}`
     }
 
-    return `Range: ${formatTime(range)} Average: ${formatTime(average)} Median: ${formatTime(median)}`
+    return `Range: ${formatTime(range)} Average: ${formatTime(average)} Median: ${formatTime(median)}`;
 }
