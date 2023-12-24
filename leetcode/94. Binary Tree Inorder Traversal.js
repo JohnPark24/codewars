@@ -48,7 +48,7 @@ var inorderTraversal = function(root) {
         }else{
             root = stack.pop();
             res.push(root.val);
-            root = root.right;
+            root = root.right
         }
     }
     return res;
