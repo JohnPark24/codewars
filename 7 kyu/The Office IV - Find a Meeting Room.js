@@ -14,3 +14,8 @@ function meeting(x){
     }
     return 'None available!';
 }
+
+function meeting(x){
+    var idx = x.indexOf("O");
+    return idx === -1 ? "None available!": idx
+}
