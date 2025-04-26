@@ -1,6 +1,5 @@
- 
 function solution(pairs){
-  return Object.entries(pairs)
-    .map(([key,value]) => `${key} = ${value}`)
-    .join(',');
+  return Object.keys(pairs)
+  .map(function(k) {return k + ' = ' + pairs[k] })
+  .join(',');
 }
